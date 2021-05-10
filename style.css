@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+
+:root {
+    --yellow: #ffd900;
+    --dark: #423e33;
+    --accent: #00C6A3;
+    --white: #FFF9EA;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'BenchNine', sans-serif;
+    line-height: 1.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.header {
+    background-color: var(--accent);
+    position: fixed;
+    width: 100%;
+    padding-bottom: .5em;
+    z-index: 9;
+    color: var(--dark);
+    opacity: 0.9;
+}
+
+.header h1 {
+    font-family: 'Fascinate', cursive;
+    font-size: 3.5em;
+    line-height: 1em;
+    color: var(--yellow);
+    margin-top: .5em;
+    
+}
+
+.header h3 {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    line-height: 1em;
+    color: var(--white)
+}
+
+.nav-bar input  {
+    margin: 0 1em 0 2em;
+    color: var(--yellow);
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--yellow);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.main {
+    position: relative;
+    top: 15em;
+    padding: 2em 0 4em 0;
+    width: 90vw;
+}
+
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    justify-content: center;
+    gap: 1em;
+    list-style-type: none;
+}
+
+img {
+    width: 150px;
+    height: 220px;
+    transition: 0.25s transform ease-in;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: var(--accent);
+    width: 100%;
+    color: var(--dark);
+    padding: 0.5em 0;
+    position: relative;
+    bottom: -20em;
+    opacity: 0.9;
+}

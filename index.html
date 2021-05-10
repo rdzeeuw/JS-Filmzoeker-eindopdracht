@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Eindopdracht - Filmzoeker</title>
+        <script defer src="db.js"></script>
+        <script defer src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Filmzoeker.nl</h1>
+            <h3>De nieuwste films, speciaal voor jou geselecteerd: in één klik!</h3>
+            <nav class="nav-bar">
+                <p>Selecteer hier welke film je zoekt:</p>
+                <input type="radio" id="all-filter" name="film-filter" value="all-filter">
+                <label for="all-filter">Alle films</label>
+                <input type="radio" id="newest-filter" name="film-filter" value="newest-filter">
+                <label for="newest-filter">Nieuwste Films (vanaf 2014)</label>
+                <input type="radio" id="avengers-filter" name="film-filter" value="avengers-filter">
+                <label for="avengers-filter">Avengers Films</label>
+                <input type="radio" id="xmen-filter" name="film-filter" value="xmen-filter">
+                <label for="xmen-filter">X-Men Films</label>
+                <input type="radio" id="princess-filter" name="film-filter" value="princess-filter">
+                <label for="princess-filter">Princess Films</label>
+                <input type="radio" id="batman-filter" name="film-filter" value="batman-filter">
+                <label for="batman-filter">Batman Films</label>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <ul id="movieList">
+                    
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright Filmzoeker.nl 2021 - All rights reserved</p>
+        </footer>
+    </body>
+    
+</html>
